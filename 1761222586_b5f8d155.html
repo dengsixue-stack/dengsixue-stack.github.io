@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Resume</title>
+<style>
+  body { font-family: Arial, sans-serif; line-height: 1.6; }
+  h1, h2, h3 { color: #333; }
+  .section { margin-bottom: 20px; }
+  .section h2 { border-bottom: 1px solid #eee; padding-bottom: 5px; }
+  .item { margin-bottom: 15px; }
+  .item h3 { margin-bottom: 5px; color: #555;}
+  .item p { margin: 0 0 5px 0; }
+  .item ul { padding-left: 20px; }
+</style>
+</head>
+<body>
+
+  <h1>邓思学</h1>
+  <p><strong>联系方式:</strong> 13022308561</p>
+
+  <div class="section">
+    <h2>教育背景</h2>
+    <div class="item">
+      <p><strong>重庆电子工程职业学院</strong></p>
+      <p>学历: 大专</p>
+      <p>专业: 计算机工程</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>工作经历</h2>
+    <div class="item">
+      <h3>Android 架构师</h3>
+      <p><strong>星河科技有限公司</strong> | 2021 年至今</p>
+      <ul>
+        <li>负责移动端架构设计与核心模块开发，主导多个大型项目的架构升级和性能优化工作。</li>
+        <li>设计并搭建公司统一的 Android 基础架构，支持多业务线快速接入。</li>
+        <li>推行 MVVM + Jetpack Compose 架构体系，提升代码可维护性与开发效率。</li>
+        <li>负责 App 性能监控体系（ANR、Crash、启动耗时、内存占用）的搭建。</li>
+        <li>参与 Google Play 订阅系统的后端协同设计与客户端集成。</li>
+        <li>推进模块化与动态化改造，使应用构建速度提升约 40%，包体积缩减 25%。</li>
+        <li>带领团队完成了从传统 View 架构向 Compose 的平滑迁移。</li>
+        <li>通过引入 CI/CD 流程与自动化测试体系，显著降低了回归测试的人力成本。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>项目经验</h2>
+    <div class="item">
+      <h3>健康伴侣App（HealthMate）</h3>
+      <p><strong>角色:</strong> 技术负责人 / Android 架构师 | <strong>项目周期:</strong> 2022.03 – 2024.01</p>
+      <p><strong>简介:</strong> HealthMate 是一款集运动监测、健康数据分析与订阅会员体系为一体的健康管理应用，拥有 200 万+ 注册用户。项目目标是提升用户活跃度与留存率，同时通过订阅体系实现商业变现。</p>
+      <p><strong>主要职责:</strong></p>
+      <ul>
+        <li>主导 Android 客户端架构设计与重构，从 MVC 迁移至 MVVM + Jetpack Compose 架构体系。</li>
+        <li>负责 Google Play 订阅支付系统的客户端集成与服务器联调（基于 Pub/Sub 消息队列实现自动续订处理）。</li>
+        <li>设计并实现健康数据同步模块，通过 Health Connect API 对接 Google Fit，实现多源数据聚合。</li>
+        <li>搭建模块化与插件化框架，支持多团队并行开发与独立构建。</li>
+        <li>构建 Crashlytics + Firebase Performance 监控体系，实现实时崩溃分析与性能告警。</li>
+      </ul>
+      <p><strong>遇到的挑战与解决方案:</strong></p>
+      <ul>
+        <li><strong>挑战 1:</strong> 多模块依赖复杂、编译缓慢。<strong>解决方案:</strong> 引入 Gradle version catalog 与自定义构建缓存策略，使构建时间降低约 40%。</li>
+        <li><strong>挑战 2:</strong> 健康数据同步存在时间戳偏差。<strong>解决方案:</strong> 重新设计数据同步协议，统一 UTC 时间与本地时区映射逻辑，确保跨时区一致性。</li>
+        <li><strong>挑战 3:</strong> 订阅回调不稳定。<strong>解决方案:</strong> 使用 Google Pub/Sub + Cloud Run 搭建回调处理服务，确保消息幂等性与延迟控制。</li>
+      </ul>
+      <p><strong>成果与影响:</strong></p>
+      <ul>
+        <li>App 年活跃用户增长 60%，平均留存率提升 35%。</li>
+        <li>崩溃率降低至 0.08%，构建效率提升约 40%。</li>
+        <li>获得公司“年度最佳技术创新奖”。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>技能证书</h2>
+    <div class="item">
+      <p>无</p>
+    </div>
+  </div>
+
+</body>
+</html>
